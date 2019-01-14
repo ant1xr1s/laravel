@@ -16,15 +16,18 @@
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
     <!-- Plugins CSS -->
     <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
-    <!-- Theme CSS -->
-    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+    <!-- Theme CSS --> <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    @yield('head')
+
 
 </head>
+
 
 <body>
 <!-- ******HEADER****** -->
@@ -57,6 +60,7 @@
             </div><!--//navabr-collapse-->
         </nav><!--//main-nav-->
     </div><!--//container-->
+    @yield('header')
 </header><!--//header-->
 
 <div id="hero" class="hero-section">
@@ -419,6 +423,7 @@
 
     </div><!--//container-->
 </div><!--//contact-section-->
+@yield('body')
 
 <footer class="footer text-center">
     <div class="container">
@@ -427,6 +432,7 @@
 
 
     </div><!--//container-->
+    @yield('footer')
 </footer>
 
 <!-- Javascript -->
